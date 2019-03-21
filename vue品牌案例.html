@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="vue.js"></script>
+    <style>
+        .head{
+            display:inline-block
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="head">
+            <label>编号</label>
+            <input type="text" v-model="id"/>
+            <label>品牌</label>
+            <input type="text" v-model="pinpai"/>
+            <input type="button" value="add" @click="add"/>
+            <label>
+                搜索关键字
+                <input type="text" v-model="keywords" v-focus/>
+            </label>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>编号</td>
+                    <td>品牌</td>
+                    <td>时间</td>
+                    <td>操作</td>
+                    
+                </tr>
+                <tr v-for="item in search(keywords)" >
+                    <td>{{item.id}}</td>
+                    <td>{{item.pinpai}}</td>
+                    <td>{{item.time|dateForm}}</td>
+                    <td><a href="#" @click="del(item.id)">删除</a></td>
+                </tr>
+            </table>
+            
+        </div>
+
+        
+    </div>
+
+    <script>
+        Vue.filter('dateForm', function (dateStr) {
+            var dt = new Date(dateStr)
+            var y = dt.getFullYear()
+            var m = dt.getMonth().toString().padStart(2,'0')
+            var d = dt.getDate()
+            return `${y}-${m}-${d}`
+        })
+        Vue.directive('focus', {
+            inserted: function (el) {
+                el.focus()
+            }
+        })
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                list: [
+                    { id: 1, pinpai: '兰博', time: new Date() },
+                    { id: 2, pinpai: '奔驰', time: new Date() },
+                ],
+                id: "",
+                pinpai: "",
+                keywords:"",
+            },
+            methods: {
+                add() {
+                    if (this.id && this.pinpai !== "") {
+                        var car = { id: this.id, pinpai: this.pinpai, time: new Date() }
+                        this.list.push(car)
+                        this.id = this.pinpai = ""
+                    } else {
+                        alert("数据不能为空")
+                    }
+                    
+                },
+                del(id) {
+                    this.list.some((item, i) => {
+                        if (item.id == id) {
+                            this.list.splice(i, 1)
+                            console.log("删除的是第"+item.id+"条数据")
+                            return true
+                        }
+                    })
+                    
+                },
+                search(keywords) { 
+                    var newList = []
+                    this.list.forEach(item => {
+                        if (item.pinpai.indexOf(keywords) != -1) {
+                            newList.push(item)
+                            
+                        }
+
+                    })
+                    return newList
+                    /*return  this.list.filter(item => {
+                        if (item.name.includes(keywords)) {
+                            return item
+                        }
+                    })*/
+                    
+                    
+                }
+            },
+            
+        })
+    </script>
+</body>
+</html>
