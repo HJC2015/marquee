@@ -1,0 +1,12 @@
+<!--pages/self/fankui/fankui.wxml-->
+<view class='scan' bindtap='loadtoComproblem'>
+  <text>常见问题</text>
+  <text style='font-size:12px;color:#b1b1b1;position:relative;left:-70px;'>（查看常见问题）</text>
+  <image src='../../../images/more.png' class='right'></image>
+</view>
+<view style='height:260px;width:100%;margin-top:10px;background-color:white;display:flex;align-items: center;flex-direction: column;'>
+  <image style='width:90px;height:90px;margin-top:48px;' src='../../../images/search.png'></image>
+  <text style='width:80%;font-size:15px;color:#666666;margin-top:38px;'>客服电话：025-66825485</text> 
+  <!-- 400-8289553 -->
+  <text style='width:80%;font-size:15px;color:#666666'>工作时间: 周一至周五(9：00-20：30)</text>
+</view>

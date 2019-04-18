@@ -1,0 +1,40 @@
+<view class='container'>
+  <view class='head'>
+    <view class='city' bindtap='city'>南京▼</view>
+    <view class='go' bindtap='city'>你想住哪儿</view>
+    <icon class='.searchcion' type='search' size='16'></icon>
+ </view>
+
+ <view class='ad'>
+ <swiper indicator-dots='true' indicator-color='rgba(0, 0, 0, .5)' autoplay='true' interval='5000' duration='1000' >
+  <view wx:for="{{imgUrls}}" data-index="{{index}}" wx:key = "imgUrls" bindtap="toImage">
+    <swiper-item>
+      <image src="{{item}}" class='slide_image' style='height:150px width:375px' mode='aspectFill' />
+    </swiper-item>
+  </view>
+</swiper>
+</view>
+
+ <view class="hr">
+  精选房源
+ </view>
+
+ <view class='body' wx:for="{{array}}" wx:key="{{index}}" data-index="{{index}}">
+  <ul>
+    <li>
+    <view bindtap='navigatorToDetail' class='nav' data-item="{{item}}"> 
+    <view class='blocken'>
+      <image style='width:165px; height:150px' src='{{item.imgSrc}}' mode='aspectFill'> 
+      </image>
+      </view>
+      <view class='texts'> 
+        <view class='title'>{{item.description}}</view>
+        <view class='description'>{{item.style}}</view>
+        <view class='position'>{{item.position}}</view>
+        <view class='price'>{{item.price}}/天</view>
+      </view>
+    </view>
+    </li>
+  </ul>
+ </view>
+</view>

@@ -1,0 +1,19 @@
+<view>我发布的房源:</view>
+<view class='body' wx:for="{{array}}" wx:key="{{index}}" data-index="{{index}}">
+  <ul>
+    <li>
+    <view bindtap='navigatorToDetail' class='nav' data-item="{{item}}"> 
+    <view class='blocken'>
+      <image style='width:165px; height:150px' src='{{item.imgSrc}}' mode='aspectFill'> 
+      </image>
+      </view>
+      <view class='texts'> 
+        <view class='title'>{{item.description}}</view>
+        <view class='description'>{{item.style}}</view>
+        <view class='position'>{{item.position}}</view>
+        <view class='price'>{{item.price}}/天</view>
+      </view>
+    </view>
+    </li>
+  </ul>
+ </view>

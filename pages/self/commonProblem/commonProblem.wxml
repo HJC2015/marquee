@@ -1,0 +1,7 @@
+<!--pages/self/commonProblem/commonProblem.wxml-->
+<view>问：</view>
+<view>小程序加载太慢了怎么办</view>
+<view>答：</view>
+<view>请在网速良好情况下适用</view>
+
+

@@ -1,0 +1,114 @@
+/**index.wxss**/
+.container{
+  margin:0 15px;
+  
+}
+.head{
+  height: 30px;
+  position: relative;
+  margin-top: 15px;
+}
+.head .city{
+  height:30px;
+  width: 64px;
+  color:#888;
+  float: left;
+  background-color: #eee;
+  line-height:30px;
+  border-right: 1px solid #888;
+  padding-left: 5px;
+  
+}
+.head .go{
+  width: 240px;
+  height: 30px;
+  float: left;
+  color: #888;
+  background-color: #eee;
+  padding-left:25px;
+  line-height: 30px;
+}
+.searchcion {
+  margin: 7px;
+  position: absolute;
+  left:70px;
+  z-index: 2;
+  text-align: center;
+}
+
+.ad{
+  height: 150px;
+  width: 375px;
+  margin-top: 15px;
+}
+.ad .slide_image{
+  width: 100%; 
+}
+.hr{
+  height: 40px;
+  width: 100%;
+  margin-top: 15px;
+  line-height: 40px;
+  font-size: 18px;
+}
+.hr button{
+  float:left;
+  height: 38px;
+  width:105px;
+  text-align: center;
+  line-height: 38px; 
+}
+.hr .mid{
+  margin: 0 15px;
+}
+.body{
+  width: 100%;
+}
+.body ul li .nav{
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid rgba(0, 0, 0, .5);
+  margin-top: 15px;
+}
+.body ul li .nav .blocken{
+  width: 50%;
+  height: 150px;
+  float: left;
+}
+.body ul li .nav .texts{
+  width: 50%;
+  height: 150px;
+  float: right;
+}
+.text view{
+  width: 154px;
+  text-align: center;
+  margin-left: 10px;
+}
+.texts .title{
+  height: 55px;
+  line-height: 55px;
+  font-size: 30px;
+  font-family: "宋体";
+}
+.texts .description,.position{
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+.texts .price{
+  height: 35px;
+  line-height: 35px;
+  size: 20px;
+  color: blue;
+}
+.texts .title,.description,.position,.price{
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+
+

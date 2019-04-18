@@ -1,0 +1,24 @@
+<!--pages/self/issue/issue.wxml-->
+<view>
+ 
+   
+      
+      
+<view>选择图片
+  <view bindtap="pic">
+      <image src="{{src1}}" class='slide_image' style='height:150px width:375px' mode='aspectFill' />
+  </view>
+</view>
+
+     <form>
+    <view>
+      <view class='title'>位置：<input type='text' class='list'  bindinput='positionInput' placeholder='请填入房源所在地区' /></view>
+      <view class='title'>户型：<input type='text' class='list'  bindinput='styleInput' placeholder='如三室一厅' /></view>
+      <view class='title'>面积：<input type='text' class='list'  placeholder='请填入房子面积' bindinput='areaInput' /></view>
+      <view class='title'>价格：<input type='number' class='list'   placeholder='请填入房源价格/天'bindinput='priceInput' /></view>
+      <view class='title'>描述：<input type='textarea'  placeholder='请填入房子具体描述' class='list' bindinput='descriptionInput' /></view>
+      <view class='title'>联系方式：<input type='text' class='list'  placeholder='请输入您的联系方式' bindinput='telephoneInput' /></view>
+    </view>
+    <button class='btn' bindtap = 'formSubmit' >发布</button>
+  </form>
+</view >

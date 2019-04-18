@@ -1,0 +1,23 @@
+<view class='contain'>
+  <view class='head'>
+  <view  wx:if="{{del}}" >
+    <view class='dianji'>{{msg}}</view>
+    <image style='width:60px; height:60px;border-radius:50%' src='{{src}}' mode='aspectFit'></image>
+  </view>
+  <view bindtap='denglu' wx:if="{{!del}}">
+    <view class='dianji'>点击登录</view>
+    <image style='width:60px; height:60px' src="../index/user-unlogin.png" mode='aspectFit'></image>
+  </view>
+  </view>
+  <view class='body'>
+    <ul>
+      <li><navigator url='fankui/fankui' >反馈问题<image style='width:35px; height:35px' src='../../images/feedback.png' mode='aspectFit'></image></navigator>  </li>
+      <li><navigator url='youhui/youhui' >我的优惠券<image style='width:35px; height:35px' src='../../images/discount.png' mode='aspectFit'></image></navigator></li>
+      <li><navigator url='issue/issue' >我要发布<image style='width:35px; height:35px' src='../../images/issue.png' mode='aspectFit'></image></navigator></li>
+      <li><navigator url='#' >我的租房<image style='width:35px; height:35px' src='../../images/identity.png' mode='aspectFit'></image></navigator></li>
+      <li><navigator class='none' url='aboutUs/aboutUs' >关于我们<image style='width:35px; height:35px' src='../../images/aboveus.png' mode='aspectFit'></image></navigator></li>
+    </ul>
+  </view>
+  <view  wx:if="{{del}}"  class='t' bindtap='tui'>退出
+  </view>
+</view>

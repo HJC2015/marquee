@@ -1,0 +1,12 @@
+<!--pages/index/search/search.wxml-->
+<view class='title'>城市选择
+<view class='page_row'>
+<button class='style' bindtap='btn1'>{{msg1}}</button>
+<button class='style' bindtap='btn2'>{{msg2}}</button>
+<button class='style' bindtap='btn3'>{{msg3}}</button>
+<button class='style' bindtap='btn4'>{{msg4}}</button>
+</view>
+</view>
+
+
+

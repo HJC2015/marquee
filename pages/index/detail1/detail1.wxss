@@ -1,0 +1,38 @@
+/* pages/index/detail1/detail1.wxss */
+/* pages/index/detail/detail.wxss */
+
+button{
+  height: 60px;
+  width: 120px;
+  border-radius: 6px;
+  text-align: center;
+  line-height: 60px;
+}
+.chuzu{
+   background-color: #09bb07;
+}
+.tuizu{
+   background-color: #e64340;
+}
+image{
+  width: 100%
+}
+.title{
+  display: flex;
+  color:#1d99f1;
+  justify-content: space-between;
+  padding: 0px 16px;
+  height: 36px;
+  line-height: 36px;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding: 0px 16px;
+  border-top: 1px solid lightgrey;
+}
+.contain{
+  margin-top: 20px;
+}

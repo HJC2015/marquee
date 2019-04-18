@@ -1,0 +1,17 @@
+/* pages/index/search/search.wxss */
+.style{
+  size: 10px;
+  margin-top: 10px;
+}
+.page_row{
+  display: flex;
+  flex-direction: row;
+}
+.title{
+  size: 20px;
+  margin-left: 15px;
+  font-family: "楷体";
+  margin-top: 10px;
+}
+/* pages/home/home.wxss */
+

@@ -1,0 +1,21 @@
+<!--pages/index/detail/detail.wxml-->
+<image src='{{detail.imgSrc}}' class='img'></image>
+
+
+<view class='contain'>
+  <view class='title'>房屋地址</view>
+  <view class='list'>{{detail.position}}</view>
+  <view class='title'>房屋描述</view>
+  <view class='list'>{{detail.description}}</view>
+  <view class='title'>房屋户型</view>
+  <view class='list'>{{detail.style}}</view>
+    <view class='title'>房屋价格</view>
+  <view class='list'>{{detail.price}}/天</view>
+  <view class='title'>联系电话</view>
+  <view class='list'>{{detail.telephone}}</view>
+  <button bindtap='chuzu' class='chuzu'>电话咨询</button>
+  <view bindtap='ge'><image style='width:30px;height:30px' src='{{flag?src1:src}}'></image>
+  <view>收藏</view>
+  </view>
+</view>
+

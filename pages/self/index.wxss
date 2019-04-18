@@ -1,0 +1,49 @@
+/* miniprogram/pages/self/index.wxss */
+.contain{
+  background-color: #eee;
+  height:570px; 
+}
+.head view{
+  height: 100px;
+  background-color: #fff;
+  
+}
+.dianji{
+  height: 100px;
+  text-align: center;
+  float: left;
+  line-height: 100px;
+  margin:0 40px 0;
+}
+.head image{
+  float:right;
+  margin: 20px 40px 20px;
+}
+.body{
+  margin-top: 40px;
+  width:100%;
+  background-color:#fff;
+  
+}
+.body ul li navigator{
+  height:75px;
+  line-height: 75px;
+  border-bottom:1px solid #eee;
+  margin: 0 20px;
+}
+.body ul li navigator image{
+  float: right;
+  margin: 20px;
+}
+navigator:hover{
+  background-color: #fff;
+}
+.t{
+  height:45px;
+  line-height: 45px;
+  background-color: #e64340;
+  margin: 20px 0;
+  text-align: center;
+}
+
+

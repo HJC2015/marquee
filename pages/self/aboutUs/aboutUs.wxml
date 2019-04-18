@@ -1,0 +1,8 @@
+<!--pages/self/aboutUs/aboutUs.wxml-->
+<view class='body'>
+<view class='top'>
+  <view class='tip'>当前版本:0.2.71</view>
+</view>
+<view class='bottom'>南京信息工程大学（黄俊淳）</view>
+</view>
+

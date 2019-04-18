@@ -1,0 +1,31 @@
+/* pages/self/issue/issue.wxss */
+.slide_image{
+  width:100%
+}
+.title{
+  display: flex;
+  color:#1d99f1;
+  justify-content: space-between;
+  padding: 0px 16px;
+  height: 36px;
+  line-height: 36px;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  align-items: center;
+  padding: 0px 16px;
+  border-bottom: 1px solid lightgrey;
+}
+button{
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+}
+.btn{
+   background-color: #09bb07;
+   margin-top: 40px;
+}
