@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/self/index",
+    "pages/collect/collect",
+    "pages/find/find",
+    "pages/index/search/search",
+    "pages/self/login/login",
+    "pages/self/issue/issue",
+    "pages/index/detail/detail",
+    "pages/self/fankui/fankui",
+    "pages/self/youhui/youhui",
+    "pages/self/aboutUs/aboutUs",
+    "pages/self/commonProblem/commonProblem",
+    "pages/collect/detail/detail",
+    "pages/find/detail/detail",
+    "pages/index/detail1/detail1"
+  ],
+  "window": {
+    "backgroundColor": "skyblue",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#268dcd",
+    "navigationBarTitleText": "易用租房",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "949494",
+    "selectedColor":"42bd56",
+    "borderStyle":"black",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"images/header.png",
+        "selectedIconPath":"images/header_onselected.png",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/find/find",
+        "text":"发现",
+        "iconPath":"images/find.png",
+        "selectedIconPath":"images/find_onselected.png"
+      },
+      {
+        "pagePath":"pages/collect/collect",
+        "text":"收藏",
+        "iconPath":"images/collect.png",
+        "selectedIconPath":"images/collect_onselected.png"
+      },
+      {
+        "pagePath":"pages/self/index",
+        "text":"个人中心",
+        "iconPath":"images/selfcentre.png",
+        "selectedIconPath":"images/selfcentre_onselected.png"
+      }
+    ]
+  }
+}
